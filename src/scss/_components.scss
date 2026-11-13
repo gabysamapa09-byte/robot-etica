@@ -1,0 +1,159 @@
+// =====================================================
+// Componentes propios de la landing
+// =====================================================
+
+.section { padding-block: $section-space; }
+
+.section-title {
+  margin-bottom: 1rem;
+  span { color: $primary; }
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: .8rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: $primary;
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+
+// ---------- Navbar ----------
+.site-nav {
+  @include glass(.04);
+  .navbar-brand { font-weight: 800; letter-spacing: -.02em; }
+  .nav-link:hover, .nav-link:focus { color: $primary; }
+}
+
+// ---------- Hero ----------
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  background:
+    radial-gradient(60rem 30rem at 80% 10%, rgba($primary, .18), transparent 60%),
+    radial-gradient(40rem 25rem at 0% 90%, rgba($info, .15), transparent 60%),
+    $dark;
+
+  h1 em { font-style: normal; color: $primary; }
+  .lead { max-width: 38rem; color: rgba(#fff, .75); }
+}
+
+.hero-visual {
+  width: min(100%, 26rem);
+  margin-inline: auto;
+  filter: drop-shadow(0 0 30px rgba($primary, .35));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+// ---------- Tarjetas de principios ----------
+.principle-card {
+  @include glass;
+  height: 100%;
+  padding: 1.75rem;
+  border-radius: $border-radius-lg;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba($primary, .6);
+    box-shadow: $accent-glow;
+  }
+
+  .icon {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-radius: $border-radius;
+    background: rgba($primary, .15);
+  }
+
+  h3 { font-size: 1.2rem; }
+  p  { margin: 0; color: rgba(#fff, .7); }
+}
+
+// ---------- Leyes de Asimov ----------
+.laws {
+  background: linear-gradient(180deg, transparent, rgba($primary, .05), transparent);
+
+  .law {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(#fff, .08);
+
+    &:last-child { border-bottom: 0; }
+
+    .num {
+      flex: 0 0 auto;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      color: $primary;
+    }
+  }
+}
+
+// ---------- Seguridad (barras de nivel de riesgo) ----------
+.risk {
+  .risk-label { display: flex; justify-content: space-between; font-weight: 600; }
+  .progress { height: .6rem; background: rgba(#fff, .08); }
+}
+
+// ---------- Casos / alerta ----------
+.callout {
+  border-left: 4px solid $warning;
+  background: rgba($warning, .08);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 $border-radius $border-radius 0;
+}
+
+// ---------- Formulario ----------
+.contact-form {
+  @include glass;
+  padding: 2rem;
+  border-radius: $border-radius-lg;
+
+  .form-control, .form-select {
+    background: rgba(#fff, .06);
+    border-color: rgba(#fff, .15);
+    color: #fff;
+
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 0 .25rem rgba($primary, .25);
+    }
+  }
+  .form-control::placeholder { color: rgba(#fff, .45); }
+}
+
+// ---------- Footer ----------
+.site-footer {
+  padding-block: 2.5rem;
+  border-top: 1px solid rgba(#fff, .08);
+  color: rgba(#fff, .6);
+  font-size: .9rem;
+}
+
+// ---------- Accesibilidad ----------
+:focus-visible {
+  outline: 3px solid $warning;
+  outline-offset: 3px;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }

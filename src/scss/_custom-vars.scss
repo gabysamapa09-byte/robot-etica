@@ -1,0 +1,10 @@
+// Variables propias (no pertenecen a Bootstrap)
+$accent-glow: 0 0 40px rgba($primary, .35);
+$section-space: clamp(4rem, 8vw, 7rem);
+
+// Mixin para el efecto "tarjeta de cristal"
+@mixin glass($opacity: .06) {
+  background: rgba(#fff, $opacity);
+  border: 1px solid rgba(#fff, .1);
+  backdrop-filter: blur(10px);
+}

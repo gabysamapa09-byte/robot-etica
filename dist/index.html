@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ética y seguridad de los robots | Diseñar con responsabilidad</title>
+  <meta name="description" content="Cómo diseñar y utilizar robots de manera responsable y segura: principios éticos, normas de seguridad y buenas prácticas.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">🤖 RoboÉtica</a>
+      <button class="navbar-toggler" type="button" id="navToggle"
+              aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#principios">Principios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#leyes">Leyes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#seguridad">Seguridad</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <header class="hero" id="inicio">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">Robótica responsable</span>
+            <h1 class="display-3 mb-4">Robots que ayudan, <em>sin poner en riesgo</em> a las personas</h1>
+            <p class="lead mb-4">Analizamos cómo debemos diseñar y utilizar robots de manera responsable y segura: desde los principios éticos hasta las normas técnicas que protegen a quienes trabajan a su lado.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#principios" class="btn btn-primary btn-lg">Explorar principios</a>
+              <a href="#seguridad" class="btn btn-outline-light btn-lg">Ver seguridad</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Robot en SVG inline: sin peticiones extra, escala sin perder calidad -->
+            <svg class="hero-visual" viewBox="0 0 200 220" role="img" aria-label="Ilustración de un robot amigable">
+              <line x1="100" y1="10" x2="100" y2="38" stroke="#00b8d9" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="100" cy="10" r="7" fill="#ffb020"/>
+              <rect x="40" y="38" width="120" height="90" rx="26" fill="#111a2e" stroke="#00b8d9" stroke-width="4"/>
+              <circle cx="75" cy="80" r="14" fill="#00b8d9"/>
+              <circle cx="125" cy="80" r="14" fill="#00b8d9"/>
+              <circle cx="79" cy="77" r="4" fill="#fff"/>
+              <circle cx="129" cy="77" r="4" fill="#fff"/>
+              <rect x="78" y="106" width="44" height="8" rx="4" fill="#2ecc71"/>
+              <rect x="55" y="138" width="90" height="62" rx="18" fill="#111a2e" stroke="#7c5cff" stroke-width="4"/>
+              <circle cx="100" cy="169" r="9" fill="#ff4d4f"/>
+              <rect x="22" y="146" width="20" height="44" rx="10" fill="#111a2e" stroke="#00b8d9" stroke-width="3"/>
+              <rect x="158" y="146" width="20" height="44" rx="10" fill="#111a2e" stroke="#00b8d9" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PRINCIPIOS -->
+    <section class="section" id="principios">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 40rem;">
+          <span class="eyebrow">Ética</span>
+          <h2 class="display-5 section-title">Cuatro principios para <span>diseñar bien</span></h2>
+          <p>Antes de construir un robot hay que preguntarse no solo si se puede, sino si se debe.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <article class="principle-card">
+              <div class="icon" aria-hidden="true">🛡️</div>
+              <h3>Seguridad primero</h3>
+              <p>El robot nunca debe causar daño físico. Los riesgos se evalúan desde el diseño.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="principle-card">
+              <div class="icon" aria-hidden="true">🔍</div>
+              <h3>Transparencia</h3>
+              <p>Las personas deben saber cómo decide el robot y quién es responsable de sus actos.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="principle-card">
+              <div class="icon" aria-hidden="true">🔒</div>
+              <h3>Privacidad</h3>
+              <p>Cámaras y sensores recogen datos personales: se recolecta solo lo necesario y se protege.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="principle-card">
+              <div class="icon" aria-hidden="true">⚖️</div>
+              <h3>Justicia y equidad</h3>
+              <p>Los algoritmos no deben discriminar, y la automatización debe considerar su impacto laboral.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEYES DE ASIMOV -->
+    <section class="section laws" id="leyes">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <span class="eyebrow">Punto de partida</span>
+            <h2 class="display-5 section-title">Las leyes de la robótica de <span>Asimov</span></h2>
+            <p>Escritas en la ficción, siguen siendo una referencia para discutir qué límites debe tener una máquina. Hoy sabemos que no bastan: la realidad exige normas técnicas y regulación.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="law"><span class="num">1</span><p class="mb-0">Un robot no hará daño a un ser humano ni, por inacción, permitirá que un ser humano sufra daño.</p></div>
+            <div class="law"><span class="num">2</span><p class="mb-0">Un robot debe obedecer las órdenes de los seres humanos, salvo que entren en conflicto con la Primera Ley.</p></div>
+            <div class="law"><span class="num">3</span><p class="mb-0">Un robot debe proteger su propia existencia, siempre que no entre en conflicto con las leyes anteriores.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGURIDAD -->
+    <section class="section" id="seguridad">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">Seguridad</span>
+            <h2 class="display-5 section-title">Medidas para <span>trabajar seguros</span></h2>
+            <ul class="mb-4">
+              <li>Botón de paro de emergencia accesible y siempre funcional.</li>
+              <li>Sensores de proximidad que reducen la velocidad cerca de personas.</li>
+              <li>Zonas delimitadas y señalización clara en el área de trabajo.</li>
+              <li>Ciberseguridad: actualizaciones y control de acceso para evitar control remoto malicioso.</li>
+              <li>Mantenimiento periódico y capacitación del personal.</li>
+            </ul>
+            <div class="callout">
+              <strong>Referencia:</strong> normas como ISO 10218 (robots industriales) e ISO/TS 15066 (robots colaborativos) definen requisitos de seguridad.
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h5 mb-4">Nivel de riesgo según el tipo de robot (ilustrativo)</h3>
+            <div class="risk mb-4">
+              <div class="risk-label"><span>Robot industrial sin barreras</span><span>Alto</span></div>
+              <div class="progress" role="progressbar" aria-label="Riesgo alto" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-danger" style="width: 90%"></div></div>
+            </div>
+            <div class="risk mb-4">
+              <div class="risk-label"><span>Robot móvil en almacén</span><span>Medio</span></div>
+              <div class="progress" role="progressbar" aria-label="Riesgo medio" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-warning" style="width: 55%"></div></div>
+            </div>
+            <div class="risk mb-4">
+              <div class="risk-label"><span>Cobot con sensores de fuerza</span><span>Bajo</span></div>
+              <div class="progress" role="progressbar" aria-label="Riesgo bajo" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-success" style="width: 25%"></div></div>
+            </div>
+            <p class="small text-secondary">Los valores son ilustrativos para fines didácticos y no sustituyen una evaluación de riesgos real.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="text-center mb-4">
+              <span class="eyebrow">Participa</span>
+              <h2 class="display-5 section-title">¿Qué opinas de la <span>ética robótica</span>?</h2>
+            </div>
+            <form class="contact-form" id="form" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Correo</label>
+                  <input type="email" class="form-control" id="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="tema" class="form-label">Tema de interés</label>
+                  <select class="form-select" id="tema">
+                    <option>Seguridad física</option>
+                    <option>Privacidad de datos</option>
+                    <option>Impacto laboral</option>
+                    <option>Responsabilidad legal</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="4" placeholder="Cuéntanos tu opinión" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                  <p class="mt-3 mb-0 text-center" id="formMsg" role="status" aria-live="polite"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>© 2026 RoboÉtica · Proyecto académico</span>
+      <span>Hecho con Sass, Bootstrap y Lightning CSS</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

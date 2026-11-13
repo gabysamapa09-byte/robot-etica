@@ -1,0 +1,43 @@
+// =====================================================
+// ARCHIVO PRINCIPAL DE SASS
+// Orden importante:
+//   1) Funciones de Bootstrap
+//   2) Overrides de variables (nuestros valores)
+//   3) Resto de Bootstrap (solo los módulos que usamos)
+//   4) Estilos propios
+// =====================================================
+
+// 1) Funciones de Bootstrap (necesarias antes de las variables)
+@import "bootstrap/scss/functions";
+
+// 2) Nuestros overrides
+@import "variables";
+
+// 3) Bootstrap: variables, mixins, mapas y SOLO los componentes necesarios
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/helpers";
+
+// Genera las clases de utilidades (.mt-3, .d-flex, etc.)
+@import "bootstrap/scss/utilities/api";
+
+// 4) Estilos propios
+@import "custom-vars";
+@import "components";

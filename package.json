@@ -1,0 +1,22 @@
+{
+  "name": "robot-etica",
+  "version": "1.0.0",
+  "description": "Landing page: Ética y seguridad de los robots (Sass + Bootstrap + Lightning CSS)",
+  "private": true,
+  "scripts": {
+    "sass:dev": "sass --load-path=node_modules --quiet-deps --silence-deprecation=import,global-builtin,color-functions --source-map src/scss/main.scss:src/css/main.css",
+    "sass:watch": "npm run sass:dev -- --watch",
+    "css:min": "lightningcss --minify --bundle --targets \">= 0.5%\" src/css/main.css -o dist/css/main.min.css",
+    "copy": "node scripts/copy.js",
+    "build": "npm run sass:dev && npm run css:min && npm run copy",
+    "metrics": "node scripts/metrics.js",
+    "serve": "http-server dist -p 8080 -c-1",
+    "start": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "http-server": "^14.1.1",
+    "lightningcss-cli": "^1.27.0",
+    "sass": "^1.80.0"
+  }
+}

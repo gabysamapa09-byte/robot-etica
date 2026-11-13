@@ -1,0 +1,18 @@
+{
+  "bootstrapCompleto": {
+    "raw": 280620,
+    "gzip": 32976,
+    "brotli": 24503
+  },
+  "sassModular": {
+    "raw": 193942,
+    "gzip": 24541,
+    "brotli": 17524
+  },
+  "lightningCss": {
+    "raw": 156255,
+    "gzip": 22347,
+    "brotli": 15813
+  },
+  "mejoraTotalRawPct": "44.3%"
+}
